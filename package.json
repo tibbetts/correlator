@@ -3,7 +3,7 @@
   "description": "Asynchronous event correlator for node.js",
 
   "dependencies": {
-    "vows": ">=0.7.0",
+    "vows": ">=0.7.0"
   },
 
   "scripts": {
