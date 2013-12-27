@@ -2,6 +2,10 @@
   "name": "correlator",
   "description": "Asynchronous event correlator for node.js",
 
+  "dependencies": {
+    "vows": ">=0.7.0",
+  },
+
   "scripts": {
     "test": "vows --spec test/*"
   }
