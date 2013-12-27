@@ -1,12 +1,18 @@
 var vows = require('vows'),
-    assert = require('assert');
+    assert = require('assert'),
+    corr = require('../lib/correlator');
 
-vows.describe('Hello World').addBatch({
+vows.describe('Simple Event Matching').addBatch({
     'Hello': {
-        topic: "Hello World",
+        topic: new corr.Correlator(),
 
-        'length': function (hello) {
-            assert.equal (hello.length, 11);
+        'notice': function (correlator) {
+        	happened = false;
+        	correlator.match("TheEvent", function(match, correlator) {
+        		happened = true;
+        	})
+            correlator.assert(new corr.Event("TheEvent"));
+            assert.equal(happened, true);
         },
 	}
 }).export(module); // Export the Suite
