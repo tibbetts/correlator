@@ -1,0 +1,4 @@
+correlator
+==========
+
+JavaScript Event Correlator
