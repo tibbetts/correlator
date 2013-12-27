@@ -1,11 +1,14 @@
 {
   "name": "correlator",
   "description": "Asynchronous event correlator for node.js",
-
+  "version": "0.0.1",
   "dependencies": {
     "vows": ">=0.7.0"
   },
-
+"repository" :
+  { "type" : "git",
+    "url" : "http://github.com/tibbetts/correlator.git"
+  },
   "scripts": {
     "test": "vows --spec test/*"
   }
