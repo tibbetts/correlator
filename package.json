@@ -1,0 +1,8 @@
+{
+  "name": "correlator",
+  "description": "Asynchronous event correlator for node.js",
+
+  "scripts": {
+    "test": "vows --spec test/*"
+  }
+}
