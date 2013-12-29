@@ -3,6 +3,9 @@
   "description": "Asynchronous event correlator for node.js",
   "version": "0.0.1",
   "dependencies": {
+  	"underscore" : ">=1.5.2",
+  	"moment" : ">=2.5.0",
+  	"priorityqueuejs" : "0.1.0",
     "vows": ">=0.7.0"
   },
 "repository" :
