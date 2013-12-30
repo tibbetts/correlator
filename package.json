@@ -5,14 +5,14 @@
   "dependencies": {
   	"underscore" : ">=1.5.2",
   	"moment" : ">=2.5.0",
+  	"nodeunit" : ">=0.8.2",
   	"priorityqueuejs" : "0.1.0",
-    "vows": ">=0.7.0"
   },
 "repository" :
   { "type" : "git",
     "url" : "http://github.com/tibbetts/correlator.git"
   },
   "scripts": {
-    "test": "vows --spec test/*"
+    "test": "nodeunit test"
   }
 }
